@@ -4,27 +4,41 @@ body {
   padding: 0;
 }
 
+.container {
+  display: flex;
+  height: 100vh;
+}
+
 .background-container {
   display: flex;
   width: 40%;
-  height: 100vh;
-  justify-content: center;
 }
 
 .overlay {
+  display: flex;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   width: 40%;
   height: 20%;
   margin-top: 140px;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-  display: block;
-  margin-left: auto;  
-  margin-right: auto;  
   width: 100px;
   height: 120px;
-  margin-top: 10px;
+}
+
+.form-layout  {
+  font-family: 'Arial';
+  width: 60%;
+  background-color: #d0d7dd;
+  height: 39%;
+}
+
+.text {
+  margin-top: 80px;
+  padding: 30px;
 }
