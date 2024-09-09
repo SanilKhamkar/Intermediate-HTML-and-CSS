@@ -31,9 +31,12 @@ body {
   height: 120px;
 }
 
-.form-layout  {
-  font-family: 'Arial';
+.form-layout {
   width: 60%;
+  font-family: 'Arial';
+}
+
+.text-container  {
   background-color: #d0d7dd;
   height: 39%;
 }
@@ -42,3 +45,4 @@ body {
   margin-top: 80px;
   padding: 30px;
 }
+
