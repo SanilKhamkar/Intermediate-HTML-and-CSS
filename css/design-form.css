@@ -67,6 +67,15 @@ body {
   outline: blue;
 }
 
+.passwordAlert {
+  border-color: red;
+  outline: red;
+  border-radius: 5px;
+}
+
+#password_alert {
+  display: none;
+}
 
 .btn {
   margin: 30px 0 0 30px;

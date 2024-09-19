@@ -44,6 +44,7 @@
 
                     <label for="password">PASSWORD</label><br />
                     <input type="password" id="password" name="password" class="textfield" required>
+                    <label for="password_alert" id="password_alert" style="color: red">*Passwords do not match</label><br />
                   </div>
 
                   <div class="right-element" style="margin-left: 70px">
@@ -79,17 +80,16 @@
     </body>
 </html>
 
-<script>
-  document.getElementById('signup').addEventListener("submit", function(e) {
+<script type="text/javascript">
+  document.addEventListener('submit', function(e) {
     e.preventDefault();
-    var password = document.getElementById('password');
-    var confirm_password = document.getElementById('confirm_password');
+    const password = document.getElementById('password').value;
+    const confirm_password = document.getElementById('confirm_password').value;
 
-
-    console.log(password);
-    console.log(confirm_password);
+    if(password!==confirm_password) {
+      document.getElementById('password').className = 'passwordAlert';
+      document.getElementById('confirm_password').className = 'passwordAlert';
+      document.getElementById("password_alert").style.display = 'block';
+    }
   });
-
-
-
 </script>
