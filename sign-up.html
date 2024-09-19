@@ -1,6 +1,95 @@
 <html>
-    <head>Sign-Up Form</head>
+    <head>
+      <title>Sign-Up Form</title>
+      <link rel="stylesheet" type="text/css" href="css/design-form.css">
+    </head>
     <body>
-        
+      <div class="container">
+        <!-- Background -->
+        <div class ="background-container">
+          <img src="images/background.jpg" width="100%" alt="background" class="background">
+
+          <div class="overlay">
+            <img src="images/odin-logo.png" class="logo" alt="logo" class="logo">
+            <h1 style="color: #fff; font-size: 86px;">ODIN</h1>
+          </div>
+        </div>
+
+        <!-- The Signup Form -->
+        <div class="form-layout">
+    
+          <!-- Text -->
+          <div class="text">
+            <h4 style="margin-top: 7%">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h4>
+            <h4 style="white-space: pre-line; margin: 0">Sign up <i>now</i> to get started.</h4>
+            <h4>You <i>know</i> you want to.</h4>
+          </div>        
+
+          <!-- Form --> 
+          <form name="signup" action="" method="post">
+            <div class="form">
+              <h4 style="font-family: Arial;">Lets go this!</h4>
+
+                <div class="text-input">
+                  <div class="left-element">
+                    <label for="firstname">FIRST NAME</label><br />
+                    <input type="text" id="firstname" name="firstname" class="textfield" required>
+                    <br />
+                    <br />
+
+                    <label for="email">EMAIL</label><br />
+                    <input type="email" id="email" name="email" class="textfield" required>
+                    <br />
+                    <br />
+
+                    <label for="password">PASSWORD</label><br />
+                    <input type="password" id="password" name="password" class="textfield" required>
+                  </div>
+
+                  <div class="right-element" style="margin-left: 70px">
+                    <label for="lastname">LAST NAME</label><br />
+                    <input type="text" id="lastname" name="lastname" class="textfield">
+                    <br />
+                    <br />
+
+                    <label for="phone">PHONE NUMBER</label><br />
+                    <input type="text" id="phone" name="phone" class="textfield">
+                    <br />
+                    <br />
+
+                    <label for="confirm_password">CONFIRM PASSWORD</label><br />
+                    <input type="password" id="confirm_password" name="confirm_password" class="textfield" required>
+                    <br />
+                    <br />
+                    <br />
+                  </div>
+                </div>
+            </div>
+
+            <!-- Submit Buttom --> 
+            <div class="submit-btn">
+              <button type="submit" id="submit" class="btn">Create Account</button>
+
+              <h5 style="margin-left: 30px;">Already have an account?<span style="color: #596D48"> Log in</span></h5>
+            </div>
+          </form>
+          <!-- Form Ends -->
+        </div>
+      </div>
     </body>
 </html>
+
+<script>
+  document.getElementById('signup').addEventListener("submit", function(e) {
+    e.preventDefault();
+    var password = document.getElementById('password');
+    var confirm_password = document.getElementById('confirm_password');
+
+
+    console.log(password);
+    console.log(confirm_password);
+  });
+
+
+
+</script>
